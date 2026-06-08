@@ -1,0 +1,13 @@
+//Dependencies
+@use 'common/var';
+@use 'common/fonts';
+
+//Reset & Base Styles
+@use 'common/reset';
+@use 'common/general';
+
+//Pages
+@use 'pages/courses/courses';
+@use 'pages/courses/filter';
+@use 'pages/courses/search';
+@use 'pages/courses/course-card';

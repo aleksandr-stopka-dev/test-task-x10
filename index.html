@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Our Online Courses</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="courses">
+        <div class="container">
+            <header class="courses__header">
+                <span class="courses__subtitle">Enjoy your studying!</span>
+
+                <h1 class="courses__title">Our online courses</h1>
+            </header>
+
+            <div class="courses__controls">
+                <nav class="courses__filter filter" id="filterNav" aria-label="Course categories"></nav>
+
+                <div class="courses__search search">
+                    <input 
+                        type="text" 
+                        class="search__input" 
+                        id="searchInput" 
+                        placeholder="Search course..."
+                        aria-label="Search course"
+                    >
+                    <svg class="search__icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41667 1.33333C3.60922 1.33333 1.33333 3.60922 1.33333 6.41667C1.33333 9.22411 3.60922 11.5 6.41667 11.5C7.81926 11.5 9.08811 10.9328 10.0085 10.0137C10.9307 9.09288 11.5 7.82189 11.5 6.41667C11.5 3.60922 9.22411 1.33333 6.41667 1.33333ZM0 6.41667C0 2.87284 2.87284 0 6.41667 0C9.96049 0 12.8333 2.87284 12.8333 6.41667C12.8333 7.94947 12.2952 9.35754 11.3986 10.4609L14.1376 13.1948C14.3982 13.4549 14.3986 13.877 14.1385 14.1376C13.8784 14.3982 13.4563 14.3986 13.1957 14.1385L10.4553 11.4032C9.35281 12.297 7.94689 12.8333 6.41667 12.8333C2.87284 12.8333 0 9.96049 0 6.41667Z" fill="#9A9CA5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="courses__grid" id="catalogGrid"></div>
+
+            <div class="courses__empty courses__empty_hidden" id="emptyState">
+                No courses found matching your criteria.
+            </div>
+
+            <div class="courses__footer">
+                <button class="courses__load-more" id="loadMoreBtn">
+                    <svg class="courses__load-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.09961 2C2.65189 2 3.09961 2.44772 3.09961 3V7.43632C4.75764 4.20928 8.11959 2 11.9996 2C16.3552 2 20.058 4.78413 21.4303 8.66675C21.6144 9.18747 21.3414 9.75879 20.8207 9.94284C20.3 10.1269 19.7287 9.85396 19.5446 9.33325C18.4459 6.22472 15.4813 4 11.9996 4C9.03957 4 6.45326 5.60799 5.06955 8H8.09957C8.65186 8 9.09957 8.44772 9.09957 9C9.09957 9.55228 8.65186 10 8.09957 10H2.09961C1.54732 10 1.09961 9.55228 1.09961 9V3C1.09961 2.44772 1.54732 2 2.09961 2Z" fill="#424551"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.17664 14.0572C3.69736 13.8731 4.26868 14.146 4.45273 14.6668C5.55144 17.7753 8.51608 20 11.9978 20C14.9578 20 17.5441 18.392 18.9278 16H15.8978C15.3455 16 14.8978 15.5523 14.8978 15C14.8978 14.4477 15.3455 14 15.8978 14H21.8977C22.45 14 22.8977 14.4477 22.8977 15V21C22.8977 21.5523 22.45 22 21.8977 22C21.3455 22 20.8977 21.5523 20.8977 21V16.5637C19.2397 19.7907 15.8778 22 11.9978 22C7.64215 22 3.93936 19.2159 2.56705 15.3332C2.383 14.8125 2.65593 14.2412 3.17664 14.0572Z" fill="#424551"/>
+                    </svg>
+                    Load more
+                </button>
+            </div>
+        </div>
+    </section>
+
+	<script src="js/data.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

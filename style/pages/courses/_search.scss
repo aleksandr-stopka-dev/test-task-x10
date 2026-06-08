@@ -1,0 +1,33 @@
+.search {
+    position: relative;
+    width: 100%;
+
+    &__input {
+        appearance: none;
+        outline: none;
+        width: 100%;
+        background: var(--white);
+        border-radius: 4px;
+        border: 1px solid var(--gray-400-color);
+        padding: 11px 44px 11px 16px;
+        transition: .3s ease;
+        font-size: 14px;
+        line-height: 1.5;
+
+        &::placeholder {
+            color: var(--gray-600-color);
+        }
+
+        &:focus {
+            border-color: var(--gray-600-color);
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}
